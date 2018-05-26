@@ -11,18 +11,26 @@ uniqueInOrder([1,2,2,3,3])       == [1,2,3]
 
 function uniqueInOrder(items) {
     let history = []
-    let newArr = []
-    if (typeof items == "string") {
-        newArr = items.split('')
-    } else {
-        newArr = items
-    }
-    for (let i = 0; i < newArr.length; i++) {
-        if (newArr[i -1] !== newArr[i]) {
-            history.push(newArr[i])
+    for (let i = 0; i < items.length; i++) {
+        if (items[i -1] !== items[i]) {
+            history.push(items[i])
         }
     }
+    console.log(history)
     return history
+}
+
+
+// other solution:
+
+var uniqueInOrder=function(iterable){
+    let result;
+    result = Array.prototype.filter
+        .call(iterable, function(current, index){ 
+            return iterable[index - 1] !== current
+        })
+    console.log(result)
+    return
 }
 
 uniqueInOrder('AAAABBBCCDAABBB') // == ['A', 'B', 'C', 'D', 'A', 'B']
