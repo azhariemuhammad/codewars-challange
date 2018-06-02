@@ -14,6 +14,10 @@
 
 
 function highAndLow(numbers) {
+    // split string numbers menjadi array
+    // lalu sorting array dari yang terkecil ke terbesar
+    // return angka terbesar dan terkecil
+    
     const nums = numbers.split(' ').map(x => parseInt(x, 10))
     .sort(function(a, b) {
         return  a > b
