@@ -17,11 +17,6 @@ All of the strings in the array passed to your function will be different length
 function sortByLength (array) {
     // Return an array containing the same strings, ordered from shortest to longest
     
-    var result = array.sort(function (a, b) {
-        return a.length - b.length
-    })
-    
-    return result
 };
 
 var message = ["Telescopes", "Glasses", "Eyes", "Monocles"]

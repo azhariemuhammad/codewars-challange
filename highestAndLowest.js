@@ -14,12 +14,7 @@
 
 
 function highAndLow(numbers) {
-    const nums = numbers.split(' ').map(x => parseInt(x, 10))
-    .sort(function(a, b) {
-        return  a > b
-    })
-    const len = nums.length-1
-    console.log(`${nums[len]} ${nums[0]}`)
+    
 }
 
 //test cases
