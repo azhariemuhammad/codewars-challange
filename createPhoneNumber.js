@@ -10,8 +10,11 @@
 
 
 function createPhoneNumber(arrNum) {
+    // ubah array ke string
     let str = arrNum.join("")
+    // gunakan regex untuk mengelompokkan angka dan replace dengan (-)
     const res = str.replace(/(\d{3})(\d{3})(\d{4})/, "($1) $2-$3")
+    // return resultnya
     console.log(res)
 }
 
