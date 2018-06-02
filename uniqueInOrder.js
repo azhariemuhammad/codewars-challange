@@ -10,28 +10,22 @@ uniqueInOrder([1,2,2,3,3])       == [1,2,3]
 */
 
 function uniqueInOrder(items) {
+    // create array untuk menampung unique value
     let history = []
+
+    // buat iterasi sesuai panjang argument
     for (let i = 0; i < items.length; i++) {
+        // cek jika element sebelumnya tidak sama dengan elemen pada posisi pointer
         if (items[i -1] !== items[i]) {
+            // push element tersebut ke array penampung
             history.push(items[i])
         }
     }
+    // return array
     console.log(history)
     return history
 }
 
-
-// other solution:
-
-var uniqueInOrder=function(iterable){
-    let result;
-    result = Array.prototype.filter
-        .call(iterable, function(current, index){ 
-            return iterable[index - 1] !== current
-        })
-    console.log(result)
-    return
-}
 
 uniqueInOrder('AAAABBBCCDAABBB') // == ['A', 'B', 'C', 'D', 'A', 'B']
 uniqueInOrder('ABBCcAD')         // == ['A', 'B', 'C', 'c', 'A', 'D']
