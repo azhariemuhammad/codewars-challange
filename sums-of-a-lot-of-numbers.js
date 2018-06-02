@@ -13,11 +13,7 @@ f(n=100) // returns 5050
 */
 
 function f(n) {
-    return (typeof n == 'number' && n >= 1 && n % 1 == 0) ? 
-        Array.apply(null, {length: n + 1})
-        .map(Number.call, Number)
-        .reduce((acc, cum) =>  acc + cum)
-    : false   
+    
 }
 
 console.log(f(97))

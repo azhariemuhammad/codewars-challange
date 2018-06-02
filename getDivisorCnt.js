@@ -9,17 +9,7 @@
 // divisors 30 = 8 -- 1, 2, 3, 5, 6, 10, 15, 30
 
 function getDivisorCnt(num) {
-    let divs = 1
-    let res = []
-    while(divs <= num) {
-        if (num % divs == 0) {
-            res.push(divs)
-            divs++
-        } else {
-            divs++
-        }
-    }
-    return res.length;
+    
 }
 
 console.log(getDivisorCnt(500000))
