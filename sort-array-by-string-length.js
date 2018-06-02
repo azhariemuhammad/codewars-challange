@@ -15,12 +15,13 @@ All of the strings in the array passed to your function will be different length
 
 // solution 
 function sortByLength (array) {
-    // Return an array containing the same strings, ordered from shortest to longest
-    
+    // gunakan method sort array
     var result = array.sort(function (a, b) {
         return a.length - b.length
     })
     
+    // Return an array containing the same strings, ordered from shortest to longest
+
     return result
 };
 
