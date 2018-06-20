@@ -18,8 +18,55 @@
 
 
 function NumberSearch(str) {
-  // Abracadabra
+  // cari jumlah letter yg ada di dalam str
+  let amount =  getAmountOfLetters(str)
+
+  // ambil angka yg ada di dalam str
+  let num = extractNumFromStr(str)
+
+  // buat array angka dari num
+  let arrNum = creatNums(num)
+
+  // jumlahkan element di dalam arrNum
+  let total = arrNum.reduce(function(a, b) {return a + b }, 0)
+
+  // bagi total / jumlah letter
+  let sum = total / amount;
+
+  // bulatkan
+  let output = Math.round(sum)
+  
+  // return hasilnya
+  return output
 }
+
+function getAmountOfLetters(str) {
+  // gunakan regex untuk menghilangkan angka dari string
+  return str.replace(/[^A-Za-z]/gi, "").length
+}
+
+function extractNumFromStr(str) {
+
+  // gunakan regex untuk menghilangkan huruf dari string
+  // dan split element arraynya
+  return str.replace(/[^\d]/gi, "").split('')
+}
+
+function creatNums(num) {
+  // buat array penampung
+  let nums = []
+
+  // looping sesuai panjang num 
+  // dan push setiap elementnya kedalam array penampung
+  // sebelum di push lakukan parseInt untuk merubah string menjadi number
+
+  for (let i = 0; i < num.length; i++) {
+    nums.push(parseInt(num[i]));
+  }
+  
+  return nums
+}
+
 
   
   NumberSearch("H3ello9-9")// 4
