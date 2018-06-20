@@ -17,6 +17,27 @@
 
 function ArrayAdditionI(arr) {
     // Expecto Patronum
+    // cari angka tertinggi 
+    var max = Math.max.apply(null, arr);
+
+    // splice angka tertinggi dari arr
+	arr.splice(arr.indexOf(max), 1);
+
+    // buat initial value
+    var total = 0;
+    
+    // jumlahkan tiap element array || reduce
+	for (var i = 0; i < arr.length; i++) {
+		total += Number(arr[i]);
+	}
+
+    // jika total === max => true
+    // selain itu return false
+    
+	if (total === max) {
+		return true;
+	}
+	return false;
     
 }
 
