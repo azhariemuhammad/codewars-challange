@@ -1,0 +1,22 @@
+{
+  "name": "codewars-challange",
+  "version": "1.0.0",
+  "description": "Hello semua... Saya azharie,  repo ini akan membantu mu untuk belajar dasar dasar javascript.",
+  "main": "arrayAdditionI.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azhariemuhammad/codewars-challange.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/azhariemuhammad/codewars-challange/issues"
+  },
+  "homepage": "https://github.com/azhariemuhammad/codewars-challange#readme",
+  "dependencies": {
+    "jest": "^23.1.0"
+  }
+}

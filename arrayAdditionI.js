@@ -25,3 +25,6 @@ function ArrayAdditionI(arr) {
 console.log(ArrayAdditionI([5, 7, 16, 1, 2])); // false
 console.log(ArrayAdditionI([3, 5, 8, 16])); // true
 console.log(ArrayAdditionI([1, 2, 3, 4]));// false
+
+
+module.exports = ArrayAdditionI;
