@@ -1,4 +1,4 @@
-const ArrayAdditionI = require('../arrayAdditionI');
+const ArrayAdditionI = require('../soal/arrayAdditionI');
 
 const test_case_1 = [3, 5, 8, 16]
 const test_case_2 = [5, 7, 16, 1, 2]
