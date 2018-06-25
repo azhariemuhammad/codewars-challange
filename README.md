@@ -35,10 +35,17 @@ mulai di branch level-2 kamu akan diminta untuk melakukan test pada code yang ka
  $ npm install
  ```
  
- untuk menjalankan test:
+ untuk menjalankan keseluruhan test:
  ```sh
  $ npm test
  ```
+
+ untuk menjalankan test yang spesifik
+ ```sh
+ $ npm test arrayAdditionI.test.js
+ ```
+ 
+ 
  
  kamu akan melihat hasil test bewarna merah atau failed. tugas kamu adalah membenarkannya
  ```sh
