@@ -31,6 +31,7 @@ mulai di branch level-2 kamu akan diminta untuk melakukan test pada code yang ka
 
  ```sh
  $ git checkout -b level-2
+ $ git pull origin level-2
  $ npm install
  ```
  
