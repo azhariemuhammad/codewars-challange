@@ -13,13 +13,14 @@
 // Output string must be two numbers separated by a single space, and highest number is first.
 
 
-function highAndLow(numbers) {
-    
+// solution
+function highAndLOw(numbers) {
+    let arrNum = numbers.split(" ");
+    arrNum.sort(function(a,b) {return b-a});
+    return arrNum[0] + " " + arrNum[arrNum.length-1];
 }
 
 //test cases
-
-highAndLow("1 2 3 4 5"); // return "5 1"
-highAndLow("1 2 -3 4 5"); // return "5 -3"
-highAndLow("1 9 3 4 -5"); // return "9 -5"
-highAndLow("4 5 29 54 4 0 -214 542 -64 1 -3 6 -6") // return "542 -214"
+console.log(highAndLOw("1 2 3 4 5")); // 5 1
+console.log(highAndLOw("1 2 -3 4 5")); // 5 -3
+console.log(highAndLOw("4 5 29 54 4 0 -214 542 -64 1 -3 6 -6")); // 542 -214 
