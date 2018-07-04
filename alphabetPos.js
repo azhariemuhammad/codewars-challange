@@ -23,7 +23,7 @@ function alphabetPosition(text) {
             result.push(alphabet.indexOf(newArr[i]) + 1);
         }
     }
-    //console.log(result);
+    
     return result.join(" ");
   }
   
