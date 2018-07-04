@@ -13,14 +13,17 @@ All of the strings in the array passed to your function will be different length
 */
 
 
-// solution 
-function sortByLength (array) {
-    // Return an array containing the same strings, ordered from shortest to longest
-    
-};
 
-var message = ["Telescopes", "Glasses", "Eyes", "Monocles"]
-var message2 = ["", "Moderately", "Brains", "Pizza"]
+//solution
+function sortByLength (array){
+    let result = array.sort(function(a,b) {
+        return a.length - b.length
+    })
+    return result;
+}
 
-console.log(sortByLength(message))
-console.log(sortByLength(message2))
+let message = ["Telescopes", "Glases", "Eyes", "Moncles"];
+let message2 = ["", "Monderately", "Brains", "Pizza"];
+
+console.log(sortByLength(message));
+console.log(sortByLength(message2));
