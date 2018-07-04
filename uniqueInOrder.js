@@ -11,10 +11,20 @@ uniqueInOrder('ABBCcAD')         == ['A', 'B', 'C', 'c', 'A', 'D']
 uniqueInOrder([1,2,2,3,3])       == [1,2,3]
 */
 
-function uniqueInOrder(items) {
-    
+// solution
+function uniqueInOrder (items) {
+    let newArr = [];
+    for(let i = 0; i < items.length; i++) {
+        if(items[i] !== items[i + 1]) {
+            newArr.push(items[i]);
+        }
+    }
+    return newArr;
 }
 
+console.log(uniqueInOrder('AAAABBBCCDAABBB')); // == ['A', 'B', 'C', 'D', 'A', 'B']
+console.log(uniqueInOrder('ABBCcAD'));         // == ['A', 'B', 'C', 'c', 'A', 'D']
+console.log(uniqueInOrder([1,2,2,3,3]));       // == [1,2,3]
 
 uniqueInOrder('AAAABBBCCDAABBB') // == ['A', 'B', 'C', 'D', 'A', 'B']
 uniqueInOrder('ABBCcAD')         // == ['A', 'B', 'C', 'c', 'A', 'D']
